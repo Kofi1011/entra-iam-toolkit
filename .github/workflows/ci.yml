@@ -1,0 +1,45 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  python-tests:
+    name: Python analyzer tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run unit tests
+        run: python -m pytest tests/ -v
+
+      - name: Smoke-test analyzer on sample data
+        run: python src/signin_log_analyzer.py --input samples/signin_logs_sample.csv --out /tmp/report.csv
+
+  powershell-lint:
+    name: PowerShell script analysis
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install PSScriptAnalyzer
+        shell: pwsh
+        run: Install-Module -Name PSScriptAnalyzer -Force -Scope CurrentUser
+
+      - name: Lint PowerShell scripts
+        shell: pwsh
+        run: |
+          $issues = Invoke-ScriptAnalyzer -Path ./scripts -Recurse -Severity Error
+          $issues | Format-Table -AutoSize
+          if ($issues.Count -gt 0) { throw "PSScriptAnalyzer found $($issues.Count) error(s)." }

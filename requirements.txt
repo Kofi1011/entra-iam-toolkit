@@ -1,0 +1,4 @@
+# Python dependencies for the sign-in log analyzer.
+# The analyzer core uses only the standard library, so it runs anywhere.
+# pytest is optional and only needed to run the test suite.
+pytest>=7.0

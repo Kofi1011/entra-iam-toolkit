@@ -1,0 +1,27 @@
+# Generated reports
+*.csv
+!samples/*.csv
+risk_report.csv
+access_review.csv
+mfa_gaps.csv
+offboarding_audit.csv
+
+# Secrets / config
+*.env
+*.secret
+*secret*
+appsettings.json
+*.pfx
+*.cer
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/

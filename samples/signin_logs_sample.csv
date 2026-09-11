@@ -1,0 +1,19 @@
+userPrincipalName,createdDateTime,ipAddress,city,countryOrRegion,latitude,longitude,status,clientAppUsed,mfaResult
+asmith@contoso.com,2026-09-01T08:02:11,72.14.201.10,Toronto,CA,43.6532,-79.3832,success,Browser,satisfied
+asmith@contoso.com,2026-09-01T08:44:03,102.89.34.5,Lagos,NG,6.5244,3.3792,success,Browser,satisfied
+jdoe@contoso.com,2026-09-01T09:10:00,45.83.12.7,Unknown,RU,55.7558,37.6173,failure,Browser,
+jdoe@contoso.com,2026-09-01T09:10:40,45.83.12.7,Unknown,RU,55.7558,37.6173,failure,Browser,
+jdoe@contoso.com,2026-09-01T09:11:15,45.83.12.7,Unknown,RU,55.7558,37.6173,failure,Browser,
+jdoe@contoso.com,2026-09-01T09:11:52,45.83.12.7,Unknown,RU,55.7558,37.6173,failure,Browser,
+jdoe@contoso.com,2026-09-01T09:12:30,45.83.12.7,Unknown,RU,55.7558,37.6173,failure,Browser,
+jdoe@contoso.com,2026-09-01T09:13:05,45.83.12.7,Unknown,RU,55.7558,37.6173,failure,Browser,
+bpatel@contoso.com,2026-09-01T10:00:00,99.229.44.2,Mississauga,CA,43.5890,-79.6441,success,Browser,satisfied
+bpatel@contoso.com,2026-09-02T14:22:10,177.54.9.11,Sao Paulo,BR,-23.5505,-46.6333,success,Browser,notApplied
+mgarcia@contoso.com,2026-09-01T11:15:00,142.250.80.1,Toronto,CA,43.6532,-79.3832,success,IMAP4,
+mgarcia@contoso.com,2026-09-01T11:20:00,142.250.80.1,Toronto,CA,43.6532,-79.3832,success,Browser,satisfied
+tchen@contoso.com,2026-09-01T12:00:00,24.114.55.9,Toronto,CA,43.6532,-79.3832,success,Browser,singleFactorAuthentication
+tchen@contoso.com,2026-09-01T13:00:00,24.114.55.9,Toronto,CA,43.6532,-79.3832,success,Browser,singleFactorAuthentication
+kwilliams@contoso.com,2026-09-01T07:30:00,70.50.12.3,Toronto,CA,43.6532,-79.3832,success,Browser,satisfied
+kwilliams@contoso.com,2026-09-01T17:45:00,70.50.12.3,Toronto,CA,43.6532,-79.3832,success,Browser,satisfied
+rlee@contoso.com,2026-09-03T02:14:00,185.220.101.4,Amsterdam,NL,52.3676,4.9041,success,Exchange ActiveSync,
+rlee@contoso.com,2026-09-03T02:20:00,185.220.101.4,Amsterdam,NL,52.3676,4.9041,success,Browser,satisfied
